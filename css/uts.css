@@ -128,37 +128,84 @@ footer a{
     width: 612px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:420px) {
     *{
         margin: 0;
         padding: 0;
     }
     header ul li a{
         color: #B59A59;
-        font-size: normal;
+        font-size: small;
+        margin-left: -40px;
     }
     header ul{
-        margin-right: 100px;
+        display: inline-flex;
+    }
+    header ul li{
+        width: 60px;
+        height: auto;
+
     }
     header{
-        width: 177%;
+        width: 100%;
     }
     .logo{
         width: 50px;
         height: 50px;
-        right: 45px;
+        right: 40px;
+        margin-left: 50px;
     }
-    .konten h2{
-        font-size: 0.5em;
+    .hi{
+        padding-left: 30px;
     }
-    .konten .text p{
+    .text{
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .konten h3{
         font-size: 1em;
     }
+    .konten h2{
+        font-size: 2em;
+    }
+    .konten{
+        display: block;
+    }
+    .konten .text p{
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .konten .text a{
+        font-size: 0.5em;
+        border: solid 1px black;
+        background: black;
+        padding: 5px;
+        border-radius: 10px;
+    }
     .gambar img{
-        height: 100px;
-        width: 100px;
+        height: 250px;
+        width: 250px;
     }
     footer{
-        bottom: 0;
+        bottom: -70px;
+        font-size: small;
+    }
+    .foo a{
+        position: relative;
+        left: -110px;
+        bottom: -50px;
+    }
+    .gambar{
+        margin-top: 30px;
+        margin-left:70px;
+    }
+    .thumb{
+        bottom: -70px;
+    }
+    .mnu{
+        bottom: -20px;
+    }
+    .kon{
+        margin-left: 10px;
     }
 }
