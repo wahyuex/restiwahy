@@ -182,6 +182,9 @@ footer a{
         padding: 5px;
         border-radius: 10px;
     }
+    .bgmenu{
+        bottom: 60px;
+    }
     .gambar img{
         height: 250px;
         width: 250px;
