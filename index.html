@@ -68,6 +68,7 @@
                 <a style="font-size:2em ; font-family: 'Raleway'; font-weight: 700; text-decoration: none; color: coral;" href="">resto<span>wahy</span></a>
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
+                    <li class="hi"><a href="#profil">Profil</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li class="hi"><a href="#promo">Promo</a></li>
                     <li class="hi"><a href="#kamii">Hubungi Kami</a></li>
@@ -95,19 +96,22 @@
                 <p>Menu Spesial</p>
             </div>
         </div>
-        <div>
-            <h1 style=" margin-top: 50px;">VISI MISI PERUSAHAAN RESTOWAHY</h1>
-            <hr style="width:50%;">
-        </div>
-        <br>
-        <div class="visimisi">
-            <div>
-                <h1 style="text-align: center;">Visi</h1>
-                <h2 style="text-align: center;">Menjadi pilihan pertama pelanggan menikmati menu makanan merakyat dengan harga terjangkau dan pelayanan terbaik</h2>
+        <div class="vmr">
+
+            <div id="profil">
+                <h1 style=" margin-top: 50px;">VISI MISI PERUSAHAAN RESTOWAHY</h1>
+                <hr style="width:50%;">
             </div>
-            <div>
-                <h1 style="text-align: center;">Misi</h1>
-                <h2 style="text-align: center;">Melakukan inovasi menu makanan merakyat dalam bentuk yang menyenangkan, bersemangat dan suasana bersahabat</h2>
+            <br>
+            <div class="visimisi" >
+                <div>
+                    <h1 style="text-align: center;">Visi</h1>
+                    <h2 style="text-align: center;">Menjadi pilihan pertama pelanggan menikmati menu makanan merakyat dengan harga terjangkau dan pelayanan terbaik</h2>
+                </div>
+                <div>
+                    <h1 style="text-align: center;">Misi</h1>
+                    <h2 style="text-align: center;">Melakukan inovasi menu makanan merakyat dalam bentuk yang menyenangkan, bersemangat dan suasana bersahabat</h2>
+                </div>
             </div>
         </div>
 
@@ -121,7 +125,7 @@
                 <button class="tablink" onclick="openPage('Minuman', this, '#ffcb9a')" >Minuman</button>
             </div>
             <div id="Makanan" class="tabcontent">
-                <figure style="display: flex;">
+                <figure>
                     <div class="uimenu">
                         <img src="foto/ayam_crispy-removebg-preview.png" alt="">
                         <figcaption>Ayam Crispy</figcaption>
@@ -150,7 +154,7 @@
                 </figure>
             </div>
             <div id="Minuman" class="tabcontent">
-                <figure style="display: flex;">
+                <figure>
                     <div class="uimenu">
                         <img src="foto/Avocado_Smoothie_PNG-removebg-preview.png" alt="">
                         <figcaption>Ayam Crispy</figcaption>
@@ -253,12 +257,12 @@
             </div>
         </div>
         <br>
-        <div style="display:flex ;" id="lokasi">
-            <div style="margin-left: 50px ;">
+        <div id="lokasi">
+            <div class="lok">
                 <h2>This restorant Location</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63323.18414999083!2d112.54068630955294!3d-7.275049655665263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7800d5cc71210b%3A0x4027a76e3532ba0!2sMenganti%2C%20Gresik%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1669538493664!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div style="margin-left: 250px;">
+            <div class="berita">
                 <h2>Berita Dan Acara</h2>
                 <picture>
                     <img src="foto/th (1).jpg" alt="">
@@ -278,7 +282,7 @@
             </div>
             <p style="margin-right: 30px;">© 2022 Hak Cipta PT RESTOWAHY.</p>
         </footer>
-    </div> -->
+    </div>
     <script>
         // untuk home
         function imgslide (anything){
