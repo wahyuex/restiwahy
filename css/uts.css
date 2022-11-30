@@ -219,6 +219,18 @@ figure img{
     border-radius: 5px;
     margin-left: 150px;
 }
+.tabcontent figure{
+    display: flex;
+}
+#lokasi{
+    display: flex;
+}
+#lokasi .lok{
+    margin-left: 50px;
+}
+ .berita{
+    margin-left: 250px;
+}
 /* resposive */
 
 
@@ -277,7 +289,7 @@ figure img{
         border-radius: 10px;
     }
     .bgmenu{
-        bottom: 60px;
+        top: 70px;
     }
     .gambar img{
         height: 250px;
@@ -305,13 +317,70 @@ figure img{
     .kon{
         margin-left: 10px;
     }
+    /* vm */
+    .vmr{
+        margin-top: 200px;
+    }
+    .vmr .visimisi h2{
+        font-size: 18px;
+    }
+    /* menu */
+    .tommenu1{
+        display: block;
+        margin-top: 50px;
+        margin-left: -90px;
+    }
+    .tommenu1 button{
+        height: 50px;
+    }
+    .tabcontent figure{
+        display: block;
+        margin-top: 50px;
+        margin-right: 55px;
+    }
+    /* promo */
     .content-slide {
-        padding: 8px 50px 12px 50px;
+        padding: 8px 0px 12px 0px;
     }
 
     .next {
-        right: 50px;
+        right: 0px;
         border-radius: 3px 0 0 3px;
+    }
+    .textt{
+        font-size: 10px;
+    }
+    /* kontak */
+    .tabcontent div p{
+        width: 360px;
+    }
+    .tabcontent form{
+        width: 360px;
+        padding-left: 0px;
+    }
+    #lokasi{
+        display: block;
+    }
+    #lokasi .lok{
+        margin-left: -50px;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    #lokasi .lok iframe{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin-top: 60px;
+    }
+    .berita{
+        margin-left: -1px;
+    }
+    .berita img{
+        width: 360px;
     }
     
 }
