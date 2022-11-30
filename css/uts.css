@@ -1,42 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-style: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body{
-    background-color: #334756;
-    color: white;
+    background-color: white ;
+    color: black;
 }
 .logo{
-    border-radius: 50%;
     width: 90px;
     height: 90px;
     position: relative;
     right:150px ;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
-header a{
+nav a{
     margin: auto;
 }
-header{
+nav{
     width: 100%;
     position: relative;
     height: 100px;
     display: flex;
-    background-color: #2C394B;
+    background-color: #B59A59;
 }
-header ul{
+nav ul{
     display: flex;
     margin: auto;
 }
-header ul li{
+nav ul li{
     list-style: none;
 }
-header ul li a{
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    font-size: large;
+}
+nav ul li a:hover{
     text-decoration: none;
     color: white;
     margin-left: 40px;
-    font-size: large;
+    font-size: larger;
 }
 span{
     color: black;
@@ -112,13 +120,13 @@ footer{
     position: relative;
     height: 50px;
     display: flex;
-    background-color: #2C394B;
     bottom: -42px;
     align-items: center;
     justify-content: space-between;
+    background-color: #B59A59;
 }
 footer a{
-    color: white;
+    color: black;
     text-decoration: none;
     margin-right: 25px;
 }
@@ -127,7 +135,151 @@ footer a{
     height: 402px;
     width: 612px;
 }
+.container {
+    background-color: white;
+    padding: 100px 0 0 0;
+}
+figure img{
+    width: 150px;
+    height: 150px;
+}
+.uimenu{
+    margin: 0 20px 0 20px;
+}
+.uimenu figcaption{
+    text-align: center;
+}
+/* Slideshow container */
+.content-slide {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
 
+.imgslide {
+    display: none;
+}
+
+.ss {
+    vertical-align: middle;
+    width:100%;
+    height: 500px;
+}
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.textt {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-slide .numberslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.tabcontent form{
+    background-color: #B59A59;
+    padding-left: 125px;
+}
+.tabcontent form button{
+    background-color: #d9b08c;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+/* resposive */
+
+@media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+.container .page {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+    background-color: #ce0000;
+}
 @media screen and (max-width:420px) {
     *{
         margin: 0;
@@ -190,7 +342,7 @@ footer a{
         width: 250px;
     }
     footer{
-        bottom: -120px;
+        bottom: -100px;
         font-size: small;
     }
     .foo a{
