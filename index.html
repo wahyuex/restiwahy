@@ -42,6 +42,16 @@
             position: relative;
             left: 31%;
         }
+        .scroll{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: black;
+            z-index: 12;            
+        }
+        .scroll a{
+            color: white;
+        }
     </style>
     <script src="https://kit.fontawesome.com/5a7f5ca103.js" crossorigin="anonymous"></script>
 </head>
@@ -49,8 +59,12 @@
         <div class="bgmenu">
 
         </div>
+        <div class="scroll">
+            <a style="text-decoration:none ;" href="#nav"><p>Scroll <br>To Top</p></a>
+            
+        </div>
         <header>
-            <nav>
+            <nav id="nav">
                 <a style="font-size:2em ; font-family: 'Raleway'; font-weight: 700; text-decoration: none; color: coral;" href="">resto<span>wahy</span></a>
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
